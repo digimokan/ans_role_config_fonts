@@ -1,0 +1,18 @@
+galaxy_info:
+  author: digimokan
+  description: "Configure a standard set of system fonts"
+  license: "MIT"
+  min_ansible_version: 2.3
+  platforms:
+    - name: Archlinux
+      versions:
+        - all
+  galaxy_tags:
+    - archlinux
+    - fonts
+
+dependencies:
+  - src: https://github.com/digimokan/ans_role_config_unofficial_packages
+    tags:
+      - never
+
