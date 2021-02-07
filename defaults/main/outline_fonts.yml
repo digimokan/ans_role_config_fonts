@@ -1,0 +1,28 @@
+# Sans, Serif, and Mono, with straight and modern look
+# Note: metrically compatible with Microsoft fonts
+# See https://en.wikipedia.org/wiki/Liberation_fonts
+install_liberation_font: true
+
+# Sans, Serif, and Mono, with rounded and accented look
+# Note: DejaVu Sans Mono is contender for best programing font
+# See https://en.wikipedia.org/wiki/DejaVu_fonts
+install_dejavu_font: true
+
+# Sans, Serif, and Mono, with bold and saturated look
+# See https://en.wikipedia.org/wiki/GNU_FreeFont
+install_gnu_freefont_font: true
+
+# Sans, Serif, and Mono, with traditional and type-set look
+# See https://en.wikipedia.org/wiki/Linux_Libertine
+install_linux_libertine_font: true
+
+# Sans, Serif, and Mono, from Microsoft legacy era
+# Note: includes Andale Mono, Courier New, Arial, Arial Black, Comic Sans,
+#       Impact, Lucida Sans, Microsoft Sans Serif, Trebuchet, Verdana, Georgia,
+#       Times New Roman
+install_ms_legacy_fonts: false
+
+# Sans, Serif, and Mono, from Microsoft Vista era
+# Note: includes Consolas, Calibri, Candara, Corbel, Cambria, Constantia
+install_ms_vista_fonts: false
+
