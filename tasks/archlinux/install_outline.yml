@@ -1,0 +1,42 @@
+- name: "Install official outline font packages"
+  block:
+    - name: "Install 'Liberation' outline font"
+      community.general.pacman:
+        name: ttf-liberation
+        state: present
+      when: install_liberation_font
+    - name: "Install 'DejaVu' outline font"
+      community.general.pacman:
+        name: ttf-dejavu
+        state: present
+      when: install_dejavu_font
+    - name: "Install 'GNU FreeFont' outline font"
+      community.general.pacman:
+        name: gnu-free-fonts
+        state: present
+      when: install_gnu_freefont_font
+    - name: "Install 'Libertine' outline font"
+      community.general.pacman:
+        name: ttf-linux-libertine
+        state: present
+      when: install_linux_libertine_font
+  become: true
+  become_user: root
+
+- name: "Install unofficial outline font packages"
+  block:
+    - name: "Install Microsoft legacy outline fonts"
+      ansible.builtin.include_role:
+        name: ans_role_config_unofficial_packages
+        tasks_from: inc/add_package.yml
+      vars:
+        package_name: "ttf-ms-fonts"
+      when: install_ms_legacy_fonts
+    - name: "Install Microsoft Vista outline fonts"
+      ansible.builtin.include_role:
+        name: ans_role_config_unofficial_packages
+        tasks_from: inc/add_package.yml
+      vars:
+        package_name: "ttf-vista-fonts"
+      when: install_ms_vista_fonts
+
