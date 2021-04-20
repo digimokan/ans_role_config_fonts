@@ -15,11 +15,11 @@
         name: gnu-free-fonts
         state: present
       when: install_gnu_freefont_font
-    - name: "Install 'Libertine' outline font"
+    - name: "Install 'Libertinus' outline font"
       community.general.pacman:
-        name: ttf-linux-libertine
+        name: libertinus-font
         state: present
-      when: install_linux_libertine_font
+      when: install_liberatinus_font
   become: true
   become_user: root
 
