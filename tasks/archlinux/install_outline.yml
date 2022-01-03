@@ -19,7 +19,7 @@
       community.general.pacman:
         name: libertinus-font
         state: present
-      when: install_liberatinus_font
+      when: install_libertinus_font
   become: true
   become_user: root
 

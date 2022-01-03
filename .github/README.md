@@ -25,6 +25,7 @@ Configure a standard set of system fonts.
 ## Supported Operating Systems
 
 * Arch Linux.
+* FreeBSD.
 
 ## Quick Start
 

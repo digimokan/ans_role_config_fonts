@@ -1,0 +1,30 @@
+- name: "Install official outline font packages"
+  block:
+    - name: "Install 'Liberation' outline font"
+      ansible.builtin.package:
+        name: liberation-fonts-ttf
+        state: present
+      when: install_liberation_font
+    - name: "Install 'DejaVu' outline font"
+      ansible.builtin.package:
+        name: dejavu
+        state: present
+      when: install_dejavu_font
+    - name: "Install 'GNU FreeFont' outline font"
+      ansible.builtin.package:
+        name: freefont-ttf
+        state: present
+      when: install_gnu_freefont_font
+    - name: "Install 'Libertinus' outline font"
+      ansible.builtin.package:
+        name: libertinus
+        state: present
+      when: install_libertinus_font
+    - name: "Install Microsoft outline fonts"
+      ansible.builtin.package:
+        name: webfonts
+        state: present
+      when: (install_ms_legacy_fonts or install_ms_vista_fonts)
+  become: true
+  become_user: root
+
