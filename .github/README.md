@@ -24,6 +24,7 @@ Configure a standard set of system fonts.
 
 ## Supported Operating Systems
 
+* Ubuntu focal (20.04), hirsute (21.04), impish (21.10)
 * Arch Linux.
 * FreeBSD.
 
