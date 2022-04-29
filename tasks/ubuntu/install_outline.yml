@@ -20,6 +20,11 @@
         name: fonts-linuxlibertine
         state: present
       when: install_libertinus_font
+    - name: "Install 'Droid' outline font"
+      ansible.builtin.package:
+        name: fonts-droid-fallback
+        state: present
+      when: install_droid_font
     - name: "Install Microsoft outline fonts"
       ansible.builtin.package:
         name: ttf-mscorefonts-installer

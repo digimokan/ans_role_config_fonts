@@ -1,25 +1,30 @@
 - name: "Install official outline font packages"
   block:
     - name: "Install 'Liberation' outline font"
-      community.general.pacman:
+      ansible.builtin.package:
         name: ttf-liberation
         state: present
       when: install_liberation_font
     - name: "Install 'DejaVu' outline font"
-      community.general.pacman:
+      ansible.builtin.package:
         name: ttf-dejavu
         state: present
       when: install_dejavu_font
     - name: "Install 'GNU FreeFont' outline font"
-      community.general.pacman:
+      ansible.builtin.package:
         name: gnu-free-fonts
         state: present
       when: install_gnu_freefont_font
     - name: "Install 'Libertinus' outline font"
-      community.general.pacman:
+      ansible.builtin.package:
         name: libertinus-font
         state: present
       when: install_libertinus_font
+    - name: "Install 'Droid' outline font"
+      ansible.builtin.package:
+        name: ttf-droid
+        state: present
+      when: install_droid_font
   become: true
   become_user: root
 

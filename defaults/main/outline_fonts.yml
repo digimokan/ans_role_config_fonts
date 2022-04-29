@@ -16,6 +16,10 @@ install_gnu_freefont_font: true
 # See https://fontlibrary.org/en/font/libertinus-serif
 install_libertinus_font: true
 
+# Sans, Serif, and Mono, with rounded and wavy look
+# See https://en.wikipedia.org/wiki/Droid_(typeface)
+install_droid_font: true
+
 # Sans, Serif, and Mono, from Microsoft legacy era
 # Note: includes Andale Mono, Courier New, Arial, Arial Black, Comic Sans,
 #       Impact, Lucida Sans, Microsoft Sans Serif, Trebuchet, Verdana, Georgia,
