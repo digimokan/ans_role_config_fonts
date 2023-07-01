@@ -28,20 +28,3 @@
   become: true
   become_user: root
 
-- name: "Install unofficial outline font packages"
-  block:
-    - name: "Install Microsoft legacy outline fonts"
-      ansible.builtin.include_role:
-        name: ans_role_config_unofficial_packages
-        tasks_from: inc/add_package.yml
-      vars:
-        package_name: "ttf-ms-fonts"
-      when: install_ms_legacy_fonts
-    - name: "Install Microsoft Vista outline fonts"
-      ansible.builtin.include_role:
-        name: ans_role_config_unofficial_packages
-        tasks_from: inc/add_package.yml
-      vars:
-        package_name: "ttf-vista-fonts"
-      when: install_ms_vista_fonts
-
