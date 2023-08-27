@@ -1,0 +1,45 @@
+- name: >-
+    Export Liberation font-name-vars: 'liberation_font_name_sans',
+    'liberation_font_name_serif', 'liberation_font_name_mono'
+  ansible.builtin.set_fact:
+    liberation_font_name_sans: "Liberation Sans"
+    liberation_font_name_serif: "Liberation Serif"
+    liberation_font_name_mono: "Liberation Mono"
+  when: install_liberation_font
+
+- name: >-
+    Export DejaVu font-name-vars: 'dejavu_font_name_sans',
+    'dejavu_font_name_serif', 'dejavu_font_name_mono'
+  ansible.builtin.set_fact:
+    dejavu_font_name_sans: "DejaVu Sans"
+    dejavu_font_name_serif: "DejaVu Serif"
+    dejavu_font_name_mono: "DejaVu Sans Mono"
+  when: install_dejavu_font
+
+- name: >-
+    Export GNU FreeFont font-name-vars: 'gnu_freefont_font_name_sans',
+    'gnu_freefont_font_name_serif', 'gnu_freefont_font_name_mono'
+  ansible.builtin.set_fact:
+    gnu_freefont_font_name_sans: "FreeSans"
+    gnu_freefont_font_name_serif: "FreeSerif"
+    gnu_freefont_font_name_mono: "FreeMono"
+  when: install_gnu_freefont_font
+
+- name: >-
+    Export Libertinus font-name-vars: 'libertinus_font_name_sans',
+    'libertinus_font_name_serif', 'libertinus_font_name_mono'
+  ansible.builtin.set_fact:
+    libertinus_font_name_sans: "Libertinus Sans"
+    libertinus_font_name_serif: "Libertinus Serif"
+    libertinus_font_name_mono: "Libertinus Mono"
+  when: install_libertinus_font
+
+- name: >-
+    Export Droid font-name-vars: 'droid_font_name_sans',
+    'droid_font_name_serif', 'droid_font_name_mono'
+  ansible.builtin.set_fact:
+    droid_font_name_sans: "Droid Sans"
+    droid_font_name_serif: "Droid Serif"
+    droid_font_name_mono: "Droid Sans Mono"
+  when: install_droid_font
+

@@ -1,0 +1,39 @@
+# NOTE: when a font is installed, its accompanying font name vars are exported
+
+# Sans, Serif, and Mono, with straight and modern look
+# Note: metrically compatible with Microsoft fonts
+# See https://en.wikipedia.org/wiki/Liberation_fonts
+install_liberation_font: true
+# liberation_font_name_sans: "Liberation Sans"
+# liberation_font_name_serif: "Liberation Serif"
+# liberation_font_name_mono: "Liberation Mono"
+
+# Sans, Serif, and Mono, with rounded and accented look
+# Note: DejaVu Sans Mono is contender for best programming font
+# See https://en.wikipedia.org/wiki/DejaVu_fonts
+install_dejavu_font: true
+# dejavu_font_name_sans: "DejaVu Sans"
+# dejavu_font_name_serif: "DejaVu Serif"
+# dejavu_font_name_mono: "DejaVu Sans Mono"
+
+# Sans, Serif, and Mono, with bold and saturated look
+# See https://en.wikipedia.org/wiki/GNU_FreeFont
+install_gnu_freefont_font: true
+# gnu_freefont_font_name_sans: "FreeSans"
+# gnu_freefont_font_name_serif: "FreeSerif"
+# gnu_freefont_font_name_mono: "FreeMono"
+
+# Sans, Serif, and Mono, with traditional and type-set look
+# See https://fontlibrary.org/en/font/libertinus-serif
+install_libertinus_font: true
+# libertinus_font_name_sans: "Libertinus Sans"
+# libertinus_font_name_serif: "Libertinus Serif"
+# libertinus_font_name_mono: "Libertinus Mono"
+
+# Sans, Serif, and Mono, with rounded and wavy look
+# See https://en.wikipedia.org/wiki/Droid_(typeface)
+install_droid_font: true
+# droid_font_name_sans: "Droid Sans"
+# droid_font_name_serif: "Droid Serif"
+# droid_font_name_mono: "Droid Sans Mono"
+

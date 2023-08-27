@@ -10,3 +10,6 @@
   ansible.builtin.include_tasks: freebsd/main.yml
   when: ansible_os_family == "FreeBSD"
 
+- name: "Export font name vars for external roles to use"
+  ansible.builtin.include_tasks: export/main.yml
+
