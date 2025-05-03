@@ -43,3 +43,22 @@
     droid_font_name_mono: "Droid Sans Mono"
   when: install_droid_font
 
+- name: >-
+    Export Nerd font-name-vars
+  ansible.builtin.set_fact:
+    nerd_font_name_0xproto: "0xProto Nerd Font"
+    nerd_font_name_atkynson_mono: "AtkynsonMono Nerd Font"
+    nerd_font_name_bitstrom_wera: "BitstromWera Nerd Font"
+    nerd_font_name_code_new_roman: "CodeNewRoman Nerd Font"
+    nerd_font_name_dejavu_sansm: "DejaVuSansM Nerd Font"
+    nerd_font_name_envy_coder: "EnvyCodeR Nerd Font"
+    nerd_font_name_fira_code: "FiraCode Nerd Font"
+    nerd_font_name_geist_mono: "GeistMono Nerd Font"
+    nerd_font_name_hack: "Hack Nerd Font"
+    nerd_font_jetbrains_mono: "JetBrainsMono Nerd Font"
+    nerd_font_literation_mono: "LiterationMono Nerd Font"
+    nerd_font_lilex: "Lilex Nerd Font"
+    nerd_font_monaspice: "Monaspice Nerd Font"
+    nerd_font_saucecode_pro: "SauceCodePro Nerd Font"
+  when: install_nerd_fonts
+

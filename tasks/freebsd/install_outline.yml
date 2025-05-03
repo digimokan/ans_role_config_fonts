@@ -25,6 +25,11 @@
         name: droid-fonts-ttf
         state: present
       when: install_droid_font
+    - name: "Install 'nerd-fonts' outline fonts"
+      ansible.builtin.package:
+        name: nerd-fonts
+        state: present
+      when: install_nerd_fonts
     - name: "Install Microsoft outline fonts"
       ansible.builtin.package:
         name: webfonts
