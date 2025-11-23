@@ -60,9 +60,9 @@ Configure a standard set of system fonts.
 
 ## Role Options
 
-See the role `defaults` file, for overridable vars:
+Vars with default values, which can be overridden in the playbook:
 
-  * [defaults/main.yml](../defaults/main.yml)
+  * [overridable](../defaults/main/overridable/)
 
 ## Contributing
 
