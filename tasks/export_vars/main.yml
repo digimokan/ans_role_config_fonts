@@ -1,6 +1,6 @@
-- name: "Export bitmap font names"
+- name: "Export bitmap font name variables"
   ansible.builtin.include_tasks: bitmap.yml
 
-- name: "Export outline font names"
+- name: "Export outline font name variables"
   ansible.builtin.include_tasks: outline.yml
 

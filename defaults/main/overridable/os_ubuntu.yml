@@ -1,0 +1,11 @@
+# Ubuntu package names for various fonts ("null": not feasible to install)
+cfg_fonts_ubuntu_unifont_pkg_name: "unifont"
+cfg_fonts_ubuntu_terminus_pkg_name: "fonts-terminus"
+cfg_fonts_ubuntu_liberation_pkg_name: "fonts-liberation2"
+cfg_fonts_ubuntu_dejavu_pkg_name: "fonts-dejavu"
+cfg_fonts_ubuntu_gnu_freefont_pkg_name: "fonts-freefont-ttf"
+cfg_fonts_ubuntu_libertinus_pkg_name: "fonts-linuxlibertine"
+cfg_fonts_ubuntu_droid_pkg_name: "fonts-droid-fallback"
+cfg_fonts_ubuntu_msfonts_pkg_name: "ttf-mscorefonts-installer"
+cfg_fonts_ubuntu_nerd_fonts_pkg_name: null
+

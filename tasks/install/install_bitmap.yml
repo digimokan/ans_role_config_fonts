@@ -1,0 +1,15 @@
+- name: "Install bitmap font packages"
+  block:
+    - name: "Install '{{ cfg_fonts_system_unifont_pkg_name }}' Unifont bitmap font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_unifont_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_unifont_font
+    - name: "Install '{{ cfg_fonts_system_terminus_pkg_name }}' Terminus bitmap font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_terminus_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_terminus_font
+  become: true
+  become_user: root
+

@@ -1,0 +1,40 @@
+- name: "Install outline font packages"
+  block:
+    - name: "Install '{{ cfg_fonts_system_liberation_pkg_name }}' Liberation outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_liberation_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_liberation_font
+    - name: "Install '{{ cfg_fonts_system_dejavu_pkg_name }}' DejaVu outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_dejavu_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_dejavu_font
+    - name: "Install '{{ cfg_fonts_system_gnu_freefont_pkg_name }}' GNU FreeFont outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_gnu_freefont_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_gnu_freefont_font
+    - name: "Install '{{ cfg_fonts_system_libertinus_pkg_name }}' Libertinus outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_libertinus_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_libertinus_font
+    - name: "Install '{{ cfg_fonts_system_droid_pkg_name }}' Droid outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_droid_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_droid_font
+    - name: "Install '{{ cfg_fonts_system_msfonts_pkg_name }}' Microsoft outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_msfonts_pkg_name }}"
+        state: present
+      when: (cfg_fonts_install_ms_legacy_fonts or cfg_fonts_install_ms_vista_fonts)
+    - name: "Install '{{ cfg_fonts_system_nerd_fonts_pkg_name }}' Nerd-Fonts outline font package"
+      ansible.builtin.package:
+        name: "{{ cfg_fonts_system_nerd_fonts_pkg_name }}"
+        state: present
+      when: cfg_fonts_install_nerd_fonts
+  become: true
+  become_user: root
+

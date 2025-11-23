@@ -1,0 +1,11 @@
+# FreeBSD package names for various fonts ("null": not feasible to install)
+cfg_fonts_freebsd_unifont_pkg_name: "gnu-unifont"
+cfg_fonts_freebsd_terminus_pkg_name: "terminus-font"
+cfg_fonts_freebsd_liberation_pkg_name: "liberation-fonts-ttf"
+cfg_fonts_freebsd_dejavu_pkg_name: "dejavu"
+cfg_fonts_freebsd_gnu_freefont_pkg_name: "freefont-ttf"
+cfg_fonts_freebsd_libertinus_pkg_name: "libertinus"
+cfg_fonts_freebsd_droid_pkg_name: "droid-fonts-ttf"
+cfg_fonts_freebsd_msfonts_pkg_name: "webfonts"
+cfg_fonts_freebsd_nerd_fonts_pkg_name: "nerd-fonts"
+

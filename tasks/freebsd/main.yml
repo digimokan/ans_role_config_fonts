@@ -1,6 +1,0 @@
-- name: "Install bitmap fonts"
-  ansible.builtin.include_tasks: install_bitmap.yml
-
-- name: "Install outline fonts"
-  ansible.builtin.include_tasks: install_outline.yml
-

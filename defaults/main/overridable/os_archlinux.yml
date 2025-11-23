@@ -1,0 +1,11 @@
+# Arch Linux package names for various fonts ("null": not feasible to install)
+cfg_fonts_archlinux_unifont_pkg_name: "bdf-unifont"
+cfg_fonts_archlinux_terminus_pkg_name: "terminus-font"
+cfg_fonts_archlinux_liberation_pkg_name: "ttf-liberation"
+cfg_fonts_archlinux_dejavu_pkg_name: "ttf-dejavu"
+cfg_fonts_archlinux_gnu_freefont_pkg_name: "gnu-free-fonts"
+cfg_fonts_archlinux_libertinus_pkg_name: "libertinus-font"
+cfg_fonts_archlinux_droid_pkg_name: "ttf-droid"
+cfg_fonts_archlinux_msfonts_pkg_name: null
+cfg_fonts_archlinux_nerd_fonts_pkg_name: "nerd-fonts"
+
