@@ -4,32 +4,32 @@
       ansible.builtin.package:
         name: fonts-liberation2
         state: present
-      when: install_liberation_font
+      when: cfg_fonts_install_liberation_font
     - name: "Install 'DejaVu' outline font"
       ansible.builtin.package:
         name: fonts-dejavu
         state: present
-      when: install_dejavu_font
+      when: cfg_fonts_install_dejavu_font
     - name: "Install 'GNU FreeFont' outline font"
       ansible.builtin.package:
         name: fonts-freefont-ttf
         state: present
-      when: install_gnu_freefont_font
+      when: cfg_fonts_install_gnu_freefont_font
     - name: "Install 'Libertinus' outline font"
       ansible.builtin.package:
         name: fonts-linuxlibertine
         state: present
-      when: install_libertinus_font
+      when: cfg_fonts_install_libertinus_font
     - name: "Install 'Droid' outline font"
       ansible.builtin.package:
         name: fonts-droid-fallback
         state: present
-      when: install_droid_font
+      when: cfg_fonts_install_droid_font
     - name: "Install Microsoft outline fonts"
       ansible.builtin.package:
         name: ttf-mscorefonts-installer
         state: present
-      when: (install_ms_legacy_fonts or install_ms_vista_fonts)
+      when: (cfg_fonts_install_ms_legacy_fonts or cfg_fonts_install_ms_vista_fonts)
   become: true
   become_user: root
 

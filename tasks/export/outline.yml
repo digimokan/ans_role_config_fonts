@@ -5,7 +5,7 @@
     liberation_font_name_sans: "Liberation Sans"
     liberation_font_name_serif: "Liberation Serif"
     liberation_font_name_mono: "Liberation Mono"
-  when: install_liberation_font
+  when: cfg_fonts_install_liberation_font
 
 - name: >-
     Export DejaVu font-name-vars: 'dejavu_font_name_sans',
@@ -14,7 +14,7 @@
     dejavu_font_name_sans: "DejaVu Sans"
     dejavu_font_name_serif: "DejaVu Serif"
     dejavu_font_name_mono: "DejaVu Sans Mono"
-  when: install_dejavu_font
+  when: cfg_fonts_install_dejavu_font
 
 - name: >-
     Export GNU FreeFont font-name-vars: 'gnu_freefont_font_name_sans',
@@ -23,7 +23,7 @@
     gnu_freefont_font_name_sans: "FreeSans"
     gnu_freefont_font_name_serif: "FreeSerif"
     gnu_freefont_font_name_mono: "FreeMono"
-  when: install_gnu_freefont_font
+  when: cfg_fonts_install_gnu_freefont_font
 
 - name: >-
     Export Libertinus font-name-vars: 'libertinus_font_name_sans',
@@ -32,7 +32,7 @@
     libertinus_font_name_sans: "Libertinus Sans"
     libertinus_font_name_serif: "Libertinus Serif"
     libertinus_font_name_mono: "Libertinus Mono"
-  when: install_libertinus_font
+  when: cfg_fonts_install_libertinus_font
 
 - name: >-
     Export Droid font-name-vars: 'droid_font_name_sans',
@@ -41,7 +41,7 @@
     droid_font_name_sans: "Droid Sans"
     droid_font_name_serif: "Droid Serif"
     droid_font_name_mono: "Droid Sans Mono"
-  when: install_droid_font
+  when: cfg_fonts_install_droid_font
 
 - name: >-
     Export Nerd font-name-vars
@@ -60,5 +60,5 @@
     nerd_font_lilex: "Lilex Nerd Font"
     nerd_font_monaspice: "Monaspice Nerd Font"
     nerd_font_saucecode_pro: "SauceCodePro Nerd Font"
-  when: install_nerd_fonts
+  when: cfg_fonts_install_nerd_fonts
 

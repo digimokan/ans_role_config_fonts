@@ -2,11 +2,9 @@
 
 # Bitmap font with most complete Unicode coverage of any font
 # See http://unifoundry.com/unifont/index.html
-install_unifont_font: false
-# unifont_font_name: "Unifont"
+cfg_fonts_install_unifont_font: false
 
 # Bitmap font designed for heavy terminal use
 # See http://terminus-font.sourceforge.net/
-install_terminus_font: false
-# terminus_font_name: "Terminus"
+cfg_fonts_install_terminus_font: false
 

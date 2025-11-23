@@ -2,9 +2,9 @@
 # Note: includes Andale Mono, Courier New, Arial, Arial Black, Comic Sans,
 #       Impact, Lucida Sans, Microsoft Sans Serif, Trebuchet, Verdana, Georgia,
 #       Times New Roman
-install_ms_legacy_fonts: false
+cfg_fonts_install_ms_legacy_fonts: false
 
 # Sans, Serif, and Mono, from Microsoft Vista era
 # Note: includes Consolas, Calibri, Candara, Corbel, Cambria, Constantia
-install_ms_vista_fonts: false
+cfg_fonts_install_ms_vista_fonts: false
 
